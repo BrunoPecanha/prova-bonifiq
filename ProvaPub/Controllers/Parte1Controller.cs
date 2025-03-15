@@ -18,7 +18,7 @@ namespace ProvaPub.Api.Controllers
 		{
 			_randomService = randomService;
 		}
-		[HttpGet]
+		[HttpGet] 
 		public async Task<int> Index()
 		{
 			return await _randomService.GetRandom();

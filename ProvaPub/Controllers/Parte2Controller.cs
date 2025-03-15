@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProvaPub.Services;
+using Repositories;
 
 namespace ProvaPub.Controllers
 {
@@ -22,18 +22,18 @@ namespace ProvaPub.Controllers
 			_ctx = ctx;
 		}
 	
-		[HttpGet("products")]
-		public ProductList ListProducts(int page)
-		{
-			var productService = new ProductService(_ctx);
-			return productService.ListProducts(page);
-		}
+		//[HttpGet("products")]
+		//public ProductList ListProducts(int page)
+		//{
+		//	var productService = new ProductService(_ctx);
+		//	return productService.ListProducts(page);
+		//}
 
-		[HttpGet("customers")]
-		public CustomerList ListCustomers(int page)
-		{
-			var customerService = new CustomerService(_ctx);
-			return customerService.ListCustomers(page);
-		}
+		//[HttpGet("customers")]
+		//public CustomerList ListCustomers(int page)
+		//{
+		//	var customerService = new CustomerService(_ctx);
+		//	return customerService.ListCustomers(page);
+		//}
 	}
 }
