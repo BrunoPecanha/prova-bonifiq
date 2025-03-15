@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using ProvaPub.Repository;
-using ProvaPub.Services;
+using Repositories;
+using Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
